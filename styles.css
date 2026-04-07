@@ -1,0 +1,81 @@
+:root {
+  --rosaFuerte: #ECC5C6;
+  --rosaClaro: #f5e9e7a0;
+   --rosaMasClaro: #f5e9e738;
+  --griAzulado: #8a9db1;
+  --grisClaro: #c1c0c2;
+  --cafe: #837d68;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    margin: 2px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+p{
+    padding: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+h1, h2,h3,h4,h5{
+    padding: 10px;
+}
+#nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index:1000;
+    background-color: var(--rosaFuerte);
+}
+.navBar, .footerList{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+    list-style: none;
+    background-color: var(--rosaFuerte);
+}
+.label {
+    display: none;
+}
+.imgProyects{
+    margin: 20px;
+    width: 500px;
+    height: 400px;
+}
+.sectionArticles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    list-style: none;
+}
+.imgInspiration{
+    margin: 20px;
+    width: auto;
+    height: 400px;
+}
+.exampleProyect{
+    width: 500px;
+}
+#home{
+    background-color: var(--rosaClaro);
+}
+#aboutMe{
+    background-color: var(--rosaMasClaro);
+}
+#portfolio{
+    background-color: var(--rosaClaro);
+}
+#myInspiration{
+    background-color: var(--rosaMasClaro);
+}
+#cvPage{
+    background-color: var(--rosaClaro);
+}
