@@ -1,81 +1,177 @@
-:root {
-  --rosaFuerte: #ECC5C6;
-  --rosaClaro: #f5e9e7a0;
-   --rosaMasClaro: #f5e9e738;
-  --griAzulado: #8a9db1;
-  --grisClaro: #c1c0c2;
-  --cafe: #837d68;
+
+:root{
+    --white:white; 
+    --black: black;
+    --regulartext:#fbf1ea;
+    --text-muted: #887f79; 
+    --bg: #0f0f0f;
+    --bghover: #2a1c14;
+    --primary: #c77029;
+    --primary-hover: #E0863A;
+    --analogous: #F2A65A;
+    --bright:#ffd8a7;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
+/* 
+
+
+https://www.123freevectors.com/color/c77029/
+https://colorkit.co/color/c77029/ */
+
+
+/* Effectos
+
+https://www.youtube.com/watch?v=TQmGR-jLev8
+
+
+https://www.youtube.com/shorts/iihmTddfz6w
+https://www.youtube.com/shorts/p8HPqBVp9lI
+
+*/
+
+
+/* reRECURSOS PERSONALIZAR PAGINA WEB
+_______________________
+https://x.com/marina_uiux/status/2048780750971892134?s=20
+https://x.com/midudev/status/2040444279244325049?s=20https://x.com/viktoroddy/status/2040392881626898553?s=20
+https://x.com/midudev/status/2049141632990146747?s=20 */
+
+
+html{
+    scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--regulartext);
+}
+/* TEXTOS */
+.strong_text{
+    color: var(--primary);
+}
+.homeText{
+    margin-top: 50%;
+}
+
 li{
     margin: 2px;
     padding: 5px;
 }
 a{
     text-decoration: none;
-    color:black;
 }
-p{
-    padding: 10px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+
+
+.grid75column{
+    display: grid;
+    grid-template-columns: 50%;
 }
-h1, h2,h3,h4,h5{
-    padding: 10px;
+.grid3col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
+.exampleProyect{
+    border: 1px solid white;
+}
+
+#home{
+    background-color: var(--bg);
+    border: 1px solid white;
+    padding: 30px;
+    height: 100vh;
+}
+
+#aboutMe{
+    background-color: var(--bg);
+    border: 1px solid white;
+    padding: 30px;
+    height: 100vh;
+    align-items: center;
+}
+#portfolio{
+    background-color: var(--bg);
+    border: 1px solid white;
+    padding: 30px;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+#myInspiration{
+    background-color: var(--bg);
+    border: 1px solid white;
+    padding: 30px;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.bordes_difuminados{
+mask-image: 
+        linear-gradient(to bottom, transparent, black 20%, black 80%, transparent),
+        linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-composite: intersect;
+}
+
+/* IMAGENES */
+.imagen-home {
+    position: fixed;
+    width: 50%;
+    height: auto;
+    top: 30%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+li{
+    margin: 2px;
+    padding: 5px;
+    color: var(--primary);
+}
+a{
+    text-decoration: none;
+    color: var(--primary)
+}
+
 #nav{
     position: fixed;
     top: 0;
     right: 0;
     z-index:1000;
-    background-color: var(--rosaFuerte);
+    background-color: var(--bg);
 }
 .navBar, .footerList{
     display: flex;
     justify-content: flex-end;
     gap: 10px; 
     list-style: none;
-    background-color: var(--rosaFuerte);
+    background-color: var(--bg);
 }
 .label {
     display: none;
 }
 .imgProyects{
     margin: 20px;
-    width: 500px;
-    height: 400px;
+    width: 40px;
+    height: 40px;
 }
-.sectionArticles{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; 
-    list-style: none;
-}
+
 .imgInspiration{
-    margin: 20px;
-    width: auto;
-    height: 400px;
+    margin: 10px;
+    width: 1200px;
+    height:auto;
 }
-.exampleProyect{
-    width: 500px;
-}
-#home{
-    background-color: var(--rosaClaro);
-}
-#aboutMe{
-    background-color: var(--rosaMasClaro);
-}
-#portfolio{
-    background-color: var(--rosaClaro);
-}
-#myInspiration{
-    background-color: var(--rosaMasClaro);
-}
+
+
+
+
 #cvPage{
-    background-color: var(--rosaClaro);
+    background-color: var(--bg);
+    border: 1px solid black;
 }
