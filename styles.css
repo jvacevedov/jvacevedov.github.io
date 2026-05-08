@@ -2,16 +2,18 @@
 :root{
     --white:white; 
     --black: black;
-    --regulartext:#fbf1ea;
-    --text-muted: #887f79; 
+    /* --regulartext:#fbf1ea; */
+    --regulartext:#0f0f0f;
+    --text-muted: #887f79;
+    --oscuro: #0f0f0f;
     --bg: #0f0f0f;
     --bghover: #2a1c14;
-    --primary: #c77029;
+    /* --primary: #c77029; */
+    --primary: #ffd8a7;
     --primary-hover: #E0863A;
     --analogous: #F2A65A;
     --bright:#ffd8a7;
 }
-
 /* 
 
 
@@ -33,27 +35,186 @@ https://www.youtube.com/shorts/p8HPqBVp9lI
 /* reRECURSOS PERSONALIZAR PAGINA WEB
 _______________________
 https://x.com/marina_uiux/status/2048780750971892134?s=20
-https://x.com/midudev/status/2040444279244325049?s=20https://x.com/viktoroddy/status/2040392881626898553?s=20
+https://x.com/midudev/status/2040444279244325049?s=20
+https://x.com/viktoroddy/status/2040392881626898553?s=20
 https://x.com/midudev/status/2049141632990146747?s=20 */
 
-
-html{
-    scroll-behavior: smooth;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
 body {
-  margin: 0;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  background: url(./images/canva-cream-and-pink-minimalist-aesthetic-background-document-a4-kspvLvbS_mA.webp) no-repeat center center/cover;
   color: var(--regulartext);
 }
 /* TEXTOS */
 .strong_text{
     color: var(--primary);
 }
-.homeText{
-    margin-top: 50%;
+
+/* NAV */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:80px;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    background: transparent;
+    box-shadow: 0 0.5px 4px var(--bright);
+    backdrop-filter: blur(10px);
+    z-index: 999;
 }
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+.navbar-logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-container .navbar-menu{
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar-container .navbar-menu li a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 500;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+}
+.navbar-container .navbar-menu li a:hover{
+    color: var(--analogous);
+    background: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
+}
+.navbar-toggle{
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer; 
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: var(--bright);
+}
+/* cosas del body para no pisar con navbar */
+#home,
+#aboutMe,
+#portfolio,
+#myInspiration,
+#connect{
+    scroll-margin-top: 150px;
+}
+
+
+/* HOME */
+.grid75column{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 20px;
+    justify-content:center;
+}
+.homeText, .aboutMeText{
+    padding: 40px 40px 30px 40px;
+    margin-top: 60px;
+}
+
+.imagen_home{
+  mask-image: url('images/home/mask2.svg');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  width: 70%;
+  height: auto;
+  align-items:center;
+}
+.homeImg{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* transform: translateY(-70px); */  
+  filter: drop-shadow(0 0 30px var(--bright));
+}
+.espacio_texto{
+    height: 100px;
+}
+.botones_redes{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.botones_redes li a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 500;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+}
+.botones_redes li a:hover{
+    color: var(--analogous);
+    background: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
+}
+.container{
+    background: transparent;
+    box-shadow: 0 0.5px 4px var(--bright);
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 li{
     margin: 2px;
@@ -62,72 +223,6 @@ li{
 a{
     text-decoration: none;
 }
-
-
-.grid75column{
-    display: grid;
-    grid-template-columns: 50%;
-}
-.grid3col{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-}
-.exampleProyect{
-    border: 1px solid white;
-}
-
-#home{
-    background-color: var(--bg);
-    border: 1px solid white;
-    padding: 30px;
-    height: 100vh;
-}
-
-#aboutMe{
-    background-color: var(--bg);
-    border: 1px solid white;
-    padding: 30px;
-    height: 100vh;
-    align-items: center;
-}
-#portfolio{
-    background-color: var(--bg);
-    border: 1px solid white;
-    padding: 30px;
-    height: 100vh;
-    display: grid;
-    align-items: center;
-}
-#myInspiration{
-    background-color: var(--bg);
-    border: 1px solid white;
-    padding: 30px;
-    height: 100vh;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-.bordes_difuminados{
-mask-image: 
-        linear-gradient(to bottom, transparent, black 20%, black 80%, transparent),
-        linear-gradient(to right, transparent, black 20%, black 80%, transparent);
-    mask-composite: intersect;
-}
-
-/* IMAGENES */
-.imagen-home {
-    position: fixed;
-    width: 50%;
-    height: auto;
-    top: 30%;
-    right: 5%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
 
 li{
     margin: 2px;
@@ -139,14 +234,64 @@ a{
     color: var(--primary)
 }
 
-#nav{
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index:1000;
-    background-color: var(--bg);
+
+.grid3col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
-.navBar, .footerList{
+.exampleProyect{
+    border: 1px solid white;
+}
+
+#home{
+    /* background-color: var(--bg); */
+    border: 1px solid white;
+    padding: 30px;
+}
+
+#aboutMe{
+    /* background-color: var(--bg); */
+    border: 1px solid white;
+    padding: 30px;
+    align-items: center;
+}
+#portfolio{
+    /* background-color: var(--bg); */
+    border: 1px solid white;
+    padding: 30px;
+    display: grid;
+    align-items: center;
+}
+#myInspiration{
+    /* background-color: var(--bg); */
+    border: 1px solid white;
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGENES */
+
+
+
+/* .imagen-home {
+    position: fixed;
+    width: 50%;
+    height: auto;
+    top: 30%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+} */
+
+
+
+/* Formulario */
+
+.footerList{
     display: flex;
     justify-content: flex-end;
     gap: 10px; 
@@ -168,10 +313,65 @@ a{
     height:auto;
 }
 
-
-
-
-#cvPage{
-    background-color: var(--bg);
-    border: 1px solid black;
+#form-message{
+    margin-top: 1rem;
+    font-weight: 500;
 }
+
+.success{
+    color: #00ff99;
+}
+
+.error{
+    color: #ff4d4d;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+ .navbar{
+    backdrop-filter: none;
+    
+ }
+ .navbar-container .navbar-menu{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem !important;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px 10px var(--bright);
+    backdrop-filter: blur(10px) ;
+ }
+
+  .navbar-container .navbar-menu.active{
+    display: flex;
+  }
+  .navbar-toggle{
+    display: block;
+    z-index: 999;   
+  }
+  .navbar-toggle.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .navbar-toggle.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar-toggle.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .homeImg{
+    display:none;
+  }
+
+  .grid75column{
+    grid-template-columns: 1fr;
+  }
+
+}
+

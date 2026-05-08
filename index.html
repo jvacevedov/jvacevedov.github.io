@@ -4,50 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/cf2ae026cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header>
      <!-- Nav -->
-    <nav id="nav">
-      <ul class="navBar">
-        <li><a href="#home">Home</a></li>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="navbar-logo">Jessica</a>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+      <ul class="navbar-menu">
+        <li><a href="#home">Hi!</a></li>
         <li><a href="#aboutMe">About me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#portfolio">Proyects</a></li>
         <li><a href="#myInspiration">My inspiration</a></li>
-        <li><a href="#cvPage">CV Page</a></li>
+        <li><a href="#connect">Let's connect</a></li>
       </ul>
+      </div>
     </nav>
     </header>
  <main>
     <!--Home-->
     <section class="section">
-        <div>
-            <img src='images/avena/Gemini_Generated_Image_tgutuqtgutuqtgut.png' alt='Foto Avena home' class="bordes_difuminados imagen-home">
-        </div>
     <article id="home" class="grid75column">
         <div class="container homeText">
-            <h1>Hi!</h1>
+            <h1 class="strong_text">Hi!</h1>
             <h2>My name is <span class="strong_text">Jessica</span></h2>
             <p>I'm a full-stack developer based in Bogotá, Colombia. 
                 I enjoy taking on new challenges and learning new things.</p>
             <p>Welcome to my portfolio — feel free to explore my projects and send me 
                 an email if you'd like to get in touch.</p>
-            <p>Full Stack Developer | SpringBoot | MYSQL | Python | Java | HTML |CSS</p>
+            <div class="espacio_texto">
+                <h3 id="texto_escrito" class="strong_text"></h3>
+            </div>
+            <div>
+                <ul class="botones_redes">
+                    
+                        <li><a href="./recursos/Jessica_Acevedo_CV.pdf" download="Jessica_Acevedo_CV">Download CV</a></li>
+                        <li><a href="https://github.com/jvacevedov/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/feed/"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="containter homeImg">
+            <img src='images/home/Gemini_Generated_Image_gx8il0gx8il0gx8i.png' alt='Foto' class="imagen_home">
         </div>
     </article>
     </section>
         <!--aboutme-->
     <section class="section">
     <article id="aboutMe" class="grid75column">
-        <div class="container" >
-            <h2>About me</h2>
+        <div class="container aboutMeText" >
+            <h2 class="strong_text">About me</h2>
             <div class="descriptions">
             <p>I'm from Colombia and I'm currently studying at Generation Colombia, where I'm participating in a bootcamp to become a Junior Full Stack Developer. I am learning a lot about Python, HTML, CSS, JavaScript, and Java.</p>
             <p>I speak Spanish, and my English level is B2. I'm learning every day to become a better version of myself.</p>
             </div>
         <div class="container">
-            <h3>About this portfolio</h3>
+            <h3 class="strong_text">About this portfolio</h3>
             <p>Description of why I am doing this</p>
         </div>
         </div>
@@ -57,7 +77,7 @@
     <section class="section">
     <article id="portfolio">
         <div class="container">
-            <h2>My proyects</h2>
+            <h2 class="strong_text">Proyects</h2>
             <div class="sectionArticles grid3col">
                 <article class="exampleProyect">
                     <h4 id="proyectTitle">Contador de click</h4>
@@ -66,7 +86,7 @@
                             <img src='images/contador/inicio.jpg' alt='Inicio Contador' class="imgProyects">
                         </div>
                     </div>
-                    <p>
+                    <p> Que hacen y que tecnologias se usa
                         Contador de click is a website where users can count the number of clicks. By clicking the "Sumar" button, the counter increases, and by clicking the "Restar" button, it decreases. 
                     </p>
                     <p>https://contador-click-ten.vercel.app/</p>
@@ -143,32 +163,24 @@
     </article>
     </section>
 
-        <!--CvPage-->
-    <article id="cvPage">
+        <!--Connect-->
+    <article id="connect">
         <div class="container">
-            <h2>Jessica Acevedo</h2>
-            <h4>Full Stack Developer / Java</h4>
-            <ul>    
-                <li>Bogotá, Colombia</li>
-            </ul>
-            <h4>Professional Profile</h4>
-            <p>Full Stack Developer graduated from Generation Colombia, with the ability to build scalable and accessible web applications. I have solid knowledge of Java Spring Boot, HTML, CSS, JavaScript, Python, and SQL. I am passionate about challenges, problem-solving, and continuous improvement. I am seeking a position where I can continue learning and grow professionally.</p>
-            <h4>Education</h4>
-            <h5>Generation Colombia</h5>
-            <p>June 2026</p>
-            <p>Intensive Full Stack programming bootcamp focused on Java Spring Boot for web and software development.</p>
-            <h5>Sena</h5>
-            <p>July 2012</p>
-            <p>Program focused on administrative processes, business improvement proposals, and performance metrics for internal and external customer service</p>
-            <h4>Skills</h4>
-            <ul>
-                <li>Java(Spring Boot)</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SQL</li>
-            </ul>     
+            <h1>Let's connect</h1>
+            <form id="contact-form">
+
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email"name="email"placeholder="Your email"required>
+
+    <textarea name="message" placeholder="Your message"required></textarea>
+    <button type="submit">
+        Send Message
+    </button>
+
+</form>
+
+<p id="form-message"></p>
+         
         </div>
     </article>
  </main>
