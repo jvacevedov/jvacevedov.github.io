@@ -3,16 +3,18 @@
     --white:white; 
     --black: black;
     /* --regulartext:#fbf1ea; */
-    --regulartext:#0f0f0f;
+    --regulartext:#2d2d2d;
     --text-muted: #887f79;
     --oscuro: #0f0f0f;
     --bg: #0f0f0f;
     --bghover: #2a1c14;
     /* --primary: #c77029; */
-    --primary: #ffd8a7;
-    --primary-hover: #E0863A;
+    --primary: #d48444;
+    --primary-hover: #ffd8a7;
     --analogous: #F2A65A;
-    --bright:#ffd8a7;
+    --bright:rgba(255, 216, 167, 0.5);
+    --glass-bg: rgba(255, 255, 255, 0.4); 
+    --glass-border: rgba(255, 255, 255, 0.6);
 }
 /* 
 
@@ -52,9 +54,20 @@ body {
   background: url(./images/canva-cream-and-pink-minimalist-aesthetic-background-document-a4-kspvLvbS_mA.webp) no-repeat center center/cover;
   color: var(--regulartext);
 }
+
+.container {
+    background: var(--glass-bg); 
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+}
 /* TEXTOS */
 .strong_text{
-    color: var(--primary);
+    color: var(--primary) !important;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5)
 }
 
 /* NAV */
@@ -68,6 +81,7 @@ body {
     top: 0;
     background: transparent;
     box-shadow: 0 0.5px 4px var(--bright);
+    border: 1px solid var(--glass-border);
     backdrop-filter: blur(10px);
     z-index: 999;
 }
@@ -82,7 +96,7 @@ body {
 }
 .navbar-logo{
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--primary);
     text-decoration: none;
     cursor: pointer;
@@ -97,10 +111,12 @@ body {
 .navbar-container .navbar-menu li a{
     text-decoration: none;
     color: var(--primary);
-    font-size: 500;
+    font-weight: 600;
+    font-size: 600;
     padding: 3px 20px;
     border-radius: 20px;
-    border: 2px solid transparent;
+
+    border: 2px solid var(--primary);
     transition: all 0.7s ease;
     white-space: nowrap;
 }
@@ -175,10 +191,12 @@ body {
 .botones_redes li a{
     text-decoration: none;
     color: var(--primary);
+    background: transparent;
     font-size: 500;
+    font-weight: 600;
     padding: 3px 20px;
     border-radius: 20px;
-    border: 2px solid transparent;
+    border: 2px solid var(--primary);
     transition: all 0.7s ease;
     white-space: nowrap;
 }
@@ -235,10 +253,9 @@ a{
 }
 
 
-.grid3col{
+.grid2columnas{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 20px;
 }
 .exampleProyect{
