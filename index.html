@@ -20,11 +20,26 @@
                 <span class="bar"></span>
             </button>
       <ul class="navbar-menu">
-        <li><a href="#home">Hi!</a></li>
-        <li><a href="#aboutMe">About me</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#myInspiration">My inspiration</a></li>
-        <li><a href="#connect">Let's connect</a></li>
+        <li><a href="#home">
+            <span class="english">Hi!</span>
+            <span class="spanish">¡Hola!</span>
+            </a></li>
+        <li><a href="#aboutMe">
+            <span class="english">About me</span>
+            <span class="spanish">Sobre mi</span>
+            </a></li>
+        <li><a href="#portfolio">
+            <span class="english">Projects</span>
+            <span class="spanish">Proyectos</span>
+            </a></li>
+        <li><a href="#myInspiration">
+            <span class="english">My inspiration</span>
+            <span class="spanish">Mi inspiracion</span>
+            </a></li>
+        <li><a href="#connect">
+            <span class="english">Let's connect</span>
+            <span class="spanish">Contacto</span>
+            </a></li>
       </ul>
       </div>
     </nav>
@@ -32,44 +47,97 @@
  <main>
     <!--Home-->
     <section class="section">
-    <article id="home" class="grid75column">
+    <article id="home" class="gridHome">
         <div class="container homeText">
-            <h1>Hi!</h1>
-            <h2>My name is <span class="strong_text">Jessica</span></h2>
-            <p>I'm a full-stack developer based in Bogotá, Colombia. 
-                I enjoy taking on new challenges and learning new things.</p>
-            <p>Welcome to my portfolio — feel free to explore my projects and send me 
-                an email if you'd like to get in touch.</p>
+            <h1><span class="english">Hi!</span><span class="spanish">¡Hola!</span></h1>
+            <h2><span class="english">My name is </span><span class="spanish">Mi nombre es </span>
+                <span class="strong_text">Jessica</span></h2>
+            <p><span class="english">I'm a full-stack developer based in Bogotá, Colombia.</span>
+                <span class="spanish">Soy desarrolladora full-stack en Bogotá, Colombia</span>
+                 </p>
+            <p><span class="english"> I enjoy taking on new challenges and learning new things.</span>
+                <span class="spanish">Me gustan los nuevos retos y aprender cosas nuevas.</span>
+            </p>
+               <br>
+            <p>
+                <span class="english">Welcome to my portfolio — feel free to explore my projects and send me a message if you'd like to get in touch.</span>
+                <span class="spanish">Bienvenido a mi portafolio - conoce mis proyectos y enviame un mensaje si deseas.</span>
+            </p>
             <div class="espacio_texto">
                 <h3 id="texto_escrito" class="strong_text"></h3>
             </div>
             <div>
                 <ul class="botones_redes">
                     
-                        <li><a href="./recursos/Jessica_Acevedo_CV.pdf" download="Jessica_Acevedo_CV">Download CV</a></li>
+                        <li><a href="./recursos/Jessica_Acevedo_CV.pdf" download="Jessica_Acevedo_CV">
+                            <span class="english">Download CV</span>
+                            <span class="spanshi">Descargar CV</span>
+                            </a></li>
                         <li><a href="https://github.com/jvacevedov/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                         <li><a href="https://www.linkedin.com/feed/"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
         </div>
         <div class="containter homeImg">
-            <img src='images/home/Gemini_Generated_Image_gx8il0gx8il0gx8i.png' alt='Foto' class="imagen_home">
+            <img src='images/home/Diseño sin título.png' alt='Foto' class="imagen_home">
         </div>
     </article>
     </section>
         <!--aboutme-->
     <section class="section">
-    <article id="aboutMe" class="grid75column">
+    <article id="aboutMe">
         <div class="container aboutMeText" >
-            <h2 class="strong_text">About me</h2>
+            <h2 class="strong_text">
+                <span class="english">About me</span>
+                <span class="spanish">Sobre mi</span></h2>
             <div class="descriptions">
-            <p>I'm from Colombia and I'm currently studying at Generation Colombia, where I'm participating in a bootcamp to become a Junior Full Stack Developer. I am learning a lot about Python, HTML, CSS, JavaScript, and Java.</p>
-            <p>I speak Spanish, and my English level is B2. I'm learning every day to become a better version of myself.</p>
+            <p><span class="english">I'm from Colombia and I'm currently studying at Generation Colombia,
+                where I'm participating in a bootcamp to become a Junior Full Stack Developer.
+                I am learning a lot about Python, HTML, CSS, JavaScript, and Java.</span>
+                <span class="spanish">Soy de Colombia y actualmente estoy estoy estudiando en Generation Colombia,
+                    donde participo en un bootcamp para ser Full Stack Developer, también estoy cursando mi técnologo en Análisis y desarrollo de software.
+                </span></p>
+            <p><span class="english"></span>
+                <span class="spanish">Soy desarrolladora backend enfocada en la creación de APIs con Java y Spring Boot.
+                    Mi perfil se complementa con el uso de lenguajes como Python y de herramientas para front-end como HTML , CSS y JavaScript.
+                    Manejo de bases de datos SQL, herramientas escenciales como Git. 
+                </span>
+            </p>
+            <p><span class="english">I speak Spanish, and my English level is B2. 
+                I'm learning every day to become a better version of myself.</span>
+                <span class="spanish">Cuento con ingles nivel B2 que me permite integrarme a equipos intercionales</span></p>
             </div>
-        <div class="container">
-            <h3 class="strong_text">About this portfolio</h3>
-            <p>Description of why I am doing this</p>
         </div>
+        <div class="container iconos_container">
+            <div>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/java/java-original.svg" class="devicons" alt="javascript logo" />
+                <p class="descriptionDevIcon">Java</p> 
+            </div>
+            <div>
+                <img src="https://spring.io/img/logos/spring-initializr.svg" class="devicons" alt="Spring Boot logo" />
+                <p class="descriptionDevIcon">Spring Boot</p> 
+            </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/python/python-original.svg" class="devicons" alt="Python logo" />
+                <p class="descriptionDevIcon">Python</p> 
+            </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/html5/html5-original.svg" class="devicons" alt="html5 logo" />
+                <p class="descriptionDevIcon">HTML</p> 
+            </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/css3/css3-original.svg" class="devicons" alt="CSS3 logo" />
+                <p class="descriptionDevIcon">CSS</p> 
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="devicons" alt="javascript logo" />
+                <p class="descriptionDevIcon">JavaScript</p> 
+            </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/mysql/mysql-original.svg" class="devicons" alt="MTSQL logo" />
+                <p class="descriptionDevIcon">MySQL</p> 
+            </div>
+            
         </div>
     </article>
     </section>
@@ -78,8 +146,11 @@
     <article id="portfolio">
         <div class="container">
             <h2 class="strong_text">Projects</h2>
-            <div class="sectionArticles grid2columnas">
-                <div class="container" id="descripcionProyecto"></div>
+            
+            <div class="gridProject">
+                <div class="container descripcionProyecto">
+                    <p>Hola</p>                                    
+                </div>
                 <div class="container">
                     <ul class="projectsList">
                         <li>Contador de click</li>
@@ -88,6 +159,7 @@
                         <li>E-commerce PetShop</li>
                     </ul>
                 </div>
+            </div>
 
             <!-- <div class="sectionArticles grid3col">
                 <article class="exampleProyect">
@@ -146,7 +218,6 @@
                     <p>Click <a href="https://github.com/jvacevedov/Lab-carrito" target="_blank"><strong>here</strong></a> to see more</p>
                 </article> -->
             <!-- </div> -->
-        </div>
     </article>
     </section>
 
@@ -198,8 +269,8 @@
     <footer>
         <ul class="footerList">
             <li>© Copyright Jessica. All rights reserved</li>
-            <li><a href="https://www.linkedin.com/in/jessica-acevedo-desarollo-full-stack-java" class="fa fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="https://github.com/jvacevedov/jvacevedov" class="fa fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/jessica-acevedo-desarollo-full-stack-java" class="fa fa-linkedin"><span class="footer_label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/jvacevedov/jvacevedov" class="fa fa-github"><span class="footer_label">Github</span></a></li>
         </ul>
     </footer>
     <script src="app.js"></script>

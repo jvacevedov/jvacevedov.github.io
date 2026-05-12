@@ -1,0 +1,48 @@
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+ .navbar{
+    backdrop-filter: none;
+    
+ }
+ .navbar-container .navbar-menu{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem !important;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px 10px var(--bright);
+    backdrop-filter: blur(10px) ;
+ }
+
+  .navbar-container .navbar-menu.active{
+    display: flex;
+  }
+  .navbar-toggle{
+    display: block;
+    z-index: 999;   
+  }
+  .navbar-toggle.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .navbar-toggle.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar-toggle.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .homeImg{
+    display:none;
+  }
+
+  .gridHome{
+    grid-template-columns: 1fr;
+  }
+
+}

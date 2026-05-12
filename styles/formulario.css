@@ -1,0 +1,24 @@
+/* Formulario */
+
+.footerList{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+    list-style: none;
+    background-color: var(--bg);
+}
+.footer_label {
+    display: none;
+}
+#form-message{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.success{
+    color: #00ff99;
+}
+
+.error{
+    color: #ff4d4d;
+}

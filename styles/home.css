@@ -1,0 +1,60 @@
+
+/* HOME */
+.gridHome{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 20px;
+    justify-content:center;
+}
+.homeText, .aboutMeText{
+    padding: 40px 40px 30px 40px;
+    /* margin-top: 60px; */
+}
+
+.imagen_home{
+  /* mask-image: url('images/home/foto_jessica_mask.webp'); */
+  /* mask-size: cover;
+  mask-repeat: no-repeat; */
+  width: 37%;
+  height: auto;
+  align-items:center;
+}
+.homeImg{
+  /* border: 1px solid white; */
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* transform: translateY(-70px); */  
+  filter: drop-shadow(0 0 5px var(--analogous));
+  
+}
+
+.espacio_texto{
+    height: 100px;
+}
+.botones_redes{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.botones_redes li a{
+    text-decoration: none;
+    color: var(--primary);
+    background: transparent;
+    font-size: 500;
+    font-weight: 600;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+    transition: all 0.7s ease;
+    white-space: nowrap;
+}
+.botones_redes li a:hover{
+    color: var(--analogous);
+    background: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
+}

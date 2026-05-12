@@ -1,0 +1,82 @@
+/* NAV */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:80px;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    border-radius: 15px;
+    background: var(--containerBg);
+    /* background: transparent;
+    box-shadow: 0 0.5px 4px var(--bright);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px); */
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+.navbar-logo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-container .navbar-menu{
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar-container .navbar-menu li a{
+    margin: 2px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 600;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-shadow: 1px 0px 0.01px var(--bright);
+    border: 2px solid var(--primary);
+    transition: all 0.7s ease;
+    white-space: nowrap;
+    background-color: transparent;
+}
+.navbar-container .navbar-menu li a:hover{
+    color: var(--analogous);
+    background: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
+}
+.navbar-toggle{
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer; 
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: var(--bright);
+}
+/* cosas del body para no pisar con navbar */
+#home,
+#aboutMe,
+#portfolio,
+#myInspiration,
+#connect{
+    scroll-margin-top: 150px;
+}

@@ -1,0 +1,17 @@
+/* Projects*/
+.projectsList li{
+    list-style: none;
+    cursor: pointer;
+    border-bottom: 1px solid var(--primary);
+}
+.projectsList li:hover{
+    padding-left: 20px;
+}
+.gridProject{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+/* .exampleProyect{
+    border: 1px solid white;
+} */

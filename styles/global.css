@@ -1,0 +1,75 @@
+:root{
+    --white:white; 
+    --black: black;
+    --regulartext:#ecf4fb;
+    --text-muted: #887f79;
+    --oscuro: #0f0f0f;
+    --bg: #0d1114;
+    --containerBg: #1f252a;
+    --bghover: #2a1c14;
+    --primary: #bfd9f0;
+    --primary-hover: #f2f7fc;
+    --analogous: #8da1b2;
+    --bright:#f2f7fc;
+    --glass-bg: rgba(255, 255, 255, 0.4); 
+    --glass-border: rgba(255, 255, 255, 0.6);
+}
+/* 
+
+fcb6b7
+https://www.123freevectors.com/color/bfd9f0/
+https://colorkit.co/color/bfd9f0/ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg);
+  color: var(--regulartext);
+}
+
+.container {
+    border-radius: 15px;
+    background: var(--containerBg);
+    /* border: 1px solid var(--glass-border); */
+    /* background: var(--glass-bg); 
+    box-shadow: 0 0.5px 4px var(--bright);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); */
+}
+/* TEXTOS */
+.english{
+    display: none;
+}
+.strong_text{
+    color: var(--primary) !important;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5)
+}
+
+#home{
+    /* background-color: var(--bg); */
+    /* border: 1px solid white; */
+    padding: 30px;
+}
+
+#aboutMe{
+    /* background-color: var(--bg); */
+    /* border: 1px solid white; */
+    padding: 30px;
+}
+#portfolio{
+    /* background-color: var(--bg); */
+    /* border: 1px solid white; */
+    padding: 30px;
+}
+#myInspiration{
+    /* background-color: var(--bg); */
+    /* border: 1px solid white; */
+    padding: 30px;
+}

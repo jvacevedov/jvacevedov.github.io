@@ -1,0 +1,17 @@
+/* About me*/
+.devicons{
+    height:40px;
+    border-radius: 20%;
+}
+
+.iconos_container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 10px 10px 10px 35px;
+    
+}
+.descriptionDevIcon{
+    font-size: 12px;
+}
