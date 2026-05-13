@@ -5,6 +5,14 @@
     flex-direction: column;
     gap: 40px;
 }
+.gridProject{
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 20px;
+}
+
+/* listado */
+
 .projectsListContainer{
     display: flex;
     flex-direction: column;
@@ -24,22 +32,30 @@
 .projectsList li:hover{
     padding-left: 20px;
 }
-.gridProject{
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    gap: 20px;
-}
 
+/* proyect card */
+.projectCardContainer{
+    padding: 10px 10px 10px 10px;
+}
+.proyectCard{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding: 10px 10px 10px 10px;
+    gap: 10px
+}
 .projectImg{
   width: auto;
   height: 300px;
-  align-items:center;
-}
+  border-radius: 15px;
+}  
 .projectImgContainer{
   position:relative;
   display:flex;
   justify-content:center;
   align-items:center;
+  
   filter: drop-shadow(0 0 5px var(--analogous));
 }
 .projectTechs{
@@ -50,7 +66,6 @@
 }
 .projectTechs li{
     list-style: none;
-    border: 1px solid var(--analogous);
     padding: 3px 10px;
     border-radius: 20px;
 }
@@ -65,7 +80,22 @@ li:hover  button {
     font-size: 20px;
 }
 
-
-/* .exampleProyect{
-    border: 1px solid white;
-} */
+.projectLinks a{
+    margin: 2px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 600;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-shadow: 1px 0px 0.01px var(--bright);
+    border: 2px solid var(--primary);
+    transition: all 0.7s ease;
+    white-space: nowrap;
+    background-color: transparent;
+}
+.projectLinks a:hover{
+    color: var(--analogous);
+    background: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
+}

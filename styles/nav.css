@@ -72,11 +72,5 @@
     margin: 5px auto;
     background: var(--bright);
 }
-/* cosas del body para no pisar con navbar */
-#home,
-#aboutMe,
-#portfolio,
-#myInspiration,
-#connect{
-    scroll-margin-top: 80px;
-}
+
+
