@@ -9,26 +9,26 @@ const projects = [
 
     {
         name: "To do Task",
-        image: "images/todo/todo.jpg",
+        image: "images/todotask/inicio.jpg",
         techs: ["JavaScript", "CSS", "HTML"],
-        repo: "https://github.com/jvacevedov/contadorClick",
-        deploy: "https://contador-click-ten.vercel.app/"
+        repo: "https://github.com/jvacevedov/TallerToDo",
+        deploy: "https://to-do-seven-blush-99.vercel.app"
     },
 
     {
         name: "Poke Api",
-        image: "images/pokeapi/pokeapi.jpg",
+        image: "images/endesarrollo/desarrollo.jpg",
         techs: ["Fetch API", "JavaScript", "CSS"],
-        repo: "https://github.com/jvacevedov/contadorClick",
-        deploy: "https://contador-click-ten.vercel.app/"
+        repo: "https://github.com/jvacevedov/proyectoPokemon",
+        deploy: "https://proyecto-pokemon-flax.vercel.app"
     },
 
     {
         name: "PetShop",
-        image: "images/petshop/petshop.jpg",
+        image: "images/endesarrollo/desarrollo.jpg",
         techs: ["React", "CSS", "Bootstrap"],
-        repo: "https://github.com/jvacevedov/contadorClick",
-        deploy: "https://contador-click-ten.vercel.app/"
+        repo: "https://github.com/jvacevedov/Lab-carrito",
+        deploy: "https://lab-carrito.vercel.app"
     }
 ];
 
