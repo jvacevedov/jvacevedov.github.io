@@ -31,6 +31,14 @@ body {
   background-color: var(--bg);
   color: var(--regulartext);
 }
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.section article {
+    flex: 1;
+}
 
 .container {
     border-radius: 15px;
