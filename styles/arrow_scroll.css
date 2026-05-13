@@ -1,0 +1,51 @@
+/* Scroll boton */
+
+.scroll{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.arrow-scroll span{
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+    transform: rotate(45deg);
+    animation: arrowAnimation 1.5s infinite;
+}
+.arrow-scroll span:nth-child(1){
+    animation-delay: 0s;
+}
+.arrow-scroll span:nth-child(2){
+    animation-delay: 0.3s;
+}
+.arrow-scroll span:nth-child(3){
+    animation-delay: 0.6s;
+}
+@keyframes arrowAnimation{
+
+    0%{
+        
+      opacity: 0;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}

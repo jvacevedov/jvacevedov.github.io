@@ -54,6 +54,7 @@ function typeEffect() {
 }
 typeEffect();
 
+
 /* formulario de contacto */
 const form = document.getElementById("contact-form");
 const formMessage = document.getElementById("form-message");

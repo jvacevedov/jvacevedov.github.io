@@ -37,12 +37,28 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .scroll{
+    height: 0px !important;
+  }
+  .scroll span{
+    display: none;
+  }
+
   .homeImg{
     display:none;
   }
-
   .gridHome{
     grid-template-columns: 1fr;
   }
+  .gridAboutMe{
+    padding: 0 20px;
+  }
+  .projectsContainer{
+    padding: 0 20px;
+  }
+  .projectTechs{
+    display: none;
+  }
+
 
 }

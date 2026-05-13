@@ -1,17 +1,71 @@
 /* Projects*/
+.projectsContainer{
+    padding: 40px 100px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.projectsListContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 20px;
+}
 .projectsList li{
     list-style: none;
-    cursor: pointer;
     border-bottom: 1px solid var(--primary);
+    padding: 10px 10px 10px 10px;
+    width: 80%;
+}
+.projectsList button{
+    all: unset;
+    cursor: pointer;
 }
 .projectsList li:hover{
     padding-left: 20px;
 }
 .gridProject{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 1fr;
     gap: 20px;
 }
+
+.projectImg{
+  width: auto;
+  height: 300px;
+  align-items:center;
+}
+.projectImgContainer{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  filter: drop-shadow(0 0 5px var(--analogous));
+}
+.projectTechs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.projectTechs li{
+    list-style: none;
+    border: 1px solid var(--analogous);
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+.projectDescription{
+    display: none;
+}
+li:hover .projectDescription {
+    display: block;
+    font-size: 12px;
+}
+li:hover  button {
+    font-size: 20px;
+}
+
+
 /* .exampleProyect{
     border: 1px solid white;
 } */

@@ -7,7 +7,10 @@
     gap: 20px;
     justify-content:center;
 }
-.homeText, .aboutMeText{
+.homeText{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     padding: 40px 40px 30px 40px;
     /* margin-top: 60px; */
 }
