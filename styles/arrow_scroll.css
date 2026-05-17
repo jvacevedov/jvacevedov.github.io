@@ -18,6 +18,9 @@
     border-bottom: 2px solid var(--primary);
     transform: rotate(45deg);
     animation: arrowAnimation 1.5s infinite;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 5px var(--analogous));
+
 }
 .arrow-scroll span:nth-child(1){
     animation-delay: 0s;

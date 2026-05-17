@@ -1,6 +1,20 @@
+.moodboardContainer{
+    padding: 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.moodboard {
+    display: flex;
+    justify-content: center;
+    
+}
 
-.imgInspiration{
-    margin: 10px;
-    width: 100%;
-    height:auto;
+.imgInspiration {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }

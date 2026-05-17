@@ -1,4 +1,75 @@
 /* Formulario */
+.conctactContainer{
+    padding: 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+    
+}
+#contact-form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.customInput{
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    padding: 10px 15px;
+    box-sizing: border-box;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+
+.customInput:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--bright);
+}
+
+/* Boton formulario */
+.botonFormulario{
+    appearance: none;
+    font-family: inherit;   
+    font-size: inherit;
+    cursor: pointer;
+    margin: 2px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 600;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-shadow: 1px 0px 0.01px var(--bright);
+    border: 2px solid var(--primary);
+    transition: all 0.7s ease;
+    white-space: nowrap;
+    background-color: transparent;
+}
+.botonFormulario:hover{
+    color: var(--analogous);
+    background: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
+}
+
+/* footer */
 
 .footerList{
     display: flex;
@@ -9,10 +80,6 @@
 }
 .footer_label {
     display: none;
-}
-#form-message{
-    margin-top: 1rem;
-    font-weight: 500;
 }
 
 .success{

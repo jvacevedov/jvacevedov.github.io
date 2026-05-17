@@ -1,6 +1,7 @@
 /* RESPONSIVE */
 @media (max-width: 768px){
 
+  /* NAVBAR */
  .navbar{
     backdrop-filter: none;
     
@@ -43,6 +44,7 @@
   .scroll span{
     display: none;
   }
+  /* HOME */
 
   .homeImg{
     display:none;
@@ -50,15 +52,31 @@
   .gridHome{
     grid-template-columns: 1fr;
   }
+  /* ABOUT ME */
   .gridAboutMe{
     padding: 0 20px;
   }
+  /* Projects */
+
   .projectsContainer{
-    padding: 0 20px;
+    padding: 10px 20px;
   }
   .projectTechs{
     display: none;
   }
+  .proyectCard{
+    display:none;
+  }
+  .gridProject{
+    grid-template-columns: 1fr;
+  }
+  li:hover  .projectLinksMovil {
+    display: block;
+  }
+  li:hover .projectTechsMovil{
+    display: block;
+    font-size: 12px;
+}
 
 
 }

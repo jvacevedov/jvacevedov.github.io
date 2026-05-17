@@ -1,42 +1,71 @@
 const projects = [
     {
-        name: "Contador de click",
-        image: "images/contador/condicionales.jpg",
-        techs: ["Bootstrap", "JavaScript", "HTML", "CSS"],
+        name: "Contador interactivo de click",
+        image: "images/contador/contador.png",
+        descripcion:"Aplicación interactiva para practicar lógica y manipulación del DOM.",
+        techs: ["Bootstrap", "JavaScript", "HTML5", "CSS3"],
         repo: "https://github.com/jvacevedov/contadorClick",
         deploy: "https://contador-click-ten.vercel.app/"
     },
 
     {
-        name: "To do Task",
+        name: "Task Manager",
         image: "images/todotask/inicio.jpg",
-        techs: ["JavaScript", "CSS", "HTML"],
+        descripcion:"Aplicación de tareas con renderizado dinámico y manejo de eventos.",
+        techs: ["JavaScript", "CSS3", "HTML5", "LocalStorage"],
         repo: "https://github.com/jvacevedov/TallerToDo",
         deploy: "https://to-do-seven-blush-99.vercel.app"
     },
 
     {
-        name: "Poke Api",
+        name: "Pokémon API Explorer (En desarrollo)",
         image: "images/endesarrollo/desarrollo.jpg",
-        techs: ["Fetch API", "JavaScript", "CSS"],
+        descripcion:"Proyecto en desarrollo para consumir y mostrar datos desde una API REST.",
+        techs: ["Fetch API", "JavaScript", "CSS3", "HTML5"],
         repo: "https://github.com/jvacevedov/proyectoPokemon",
         deploy: "https://proyecto-pokemon-flax.vercel.app"
     },
 
     {
-        name: "PetShop",
+        name: "PetShop Ecommerce (Proyecto Full Stack - En desarrollo)",
         image: "images/endesarrollo/desarrollo.jpg",
-        techs: ["React", "CSS", "Bootstrap"],
+        descripcion:"Ecommerce en desarrollo con futuro backend en Spring Boot.",
+        techs: ["HTML5", "CSS3", "Bootstrap","Java", "SpringBoot","Postgresql"],
         repo: "https://github.com/jvacevedov/Lab-carrito",
         deploy: "https://lab-carrito.vercel.app"
     }
 ];
 
+const projectsListContainer = document.querySelector('.projectsList');
+
+projects.forEach(project => {
+    const li = document.createElement('li');
+
+    li.innerHTML = `
+    <div class="projectLi">
+        <div class="projectInfo">
+        <button class="projectbutton">${project.name}</button>
+        <span class="projectDescription">${project.descripcion}</span></br>
+        <span class="projectTechsMovil">${project.techs.join(', ')}</span>
+        </div>
+        <div class="projectLinksMovil">
+            <a href=""${project.repo}"" class="botones btn-repoMovil" target="_blank">
+            <i class="fa-brands fa-github"></i> Repositorio</a>
+            <a href=""${project.deploy}" class="botones btn-deployMovil" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+        </div>
+    </div>
+    `;
+    projectsListContainer.appendChild(li);
+}); 
 const buttons = document.querySelectorAll(".projectbutton");
 const projectImg = document.querySelector(".projectImg");
 const projectTechs = document.querySelector(".projectTechs");
 const repoBtn = document.querySelector(".btn-repo");
 const deployBtn = document.querySelector(".btn-deploy");
+const divBtns= document.querySelector(".projectLinks");
+
+
 
 function loadProject(index) {
 
@@ -55,7 +84,8 @@ function loadProject(index) {
         projectTechs.appendChild(li);
     });
      repoBtn.href = projects[index].repo;
-    deployBtn.href = projects[index].deploy;
+     deployBtn.href = projects[index].deploy;
+     divBtns.style.display = "block";
 }
 
 // Eventos click botones
@@ -66,6 +96,3 @@ buttons.forEach((button, index) => {
         loadProject(index);
     });
 });
-
-// Mostrar el primero al abrir la página
-loadProject(0);

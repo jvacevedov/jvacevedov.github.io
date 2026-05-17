@@ -44,7 +44,7 @@
     padding: 0;
     margin: 0;
 }
-.botones_redes li a{
+/* .botones_redes li a{
     text-decoration: none;
     color: var(--primary);
     background: transparent;
@@ -60,4 +60,4 @@
     color: var(--analogous);
     background: var(--primary-hover);
     border: 2px solid var(--primary-hover);
-}
+} */

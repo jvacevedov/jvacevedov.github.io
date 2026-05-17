@@ -38,7 +38,7 @@
     list-style: none;
 }
 
-.navbar-container .navbar-menu li a{
+/* .navbar-container .navbar-menu li a{
     margin: 2px;
     padding: 5px;
     text-decoration: none;
@@ -57,7 +57,7 @@
     color: var(--analogous);
     background: var(--primary-hover);
     border: 2px solid var(--primary-hover);
-}
+} */
 .navbar-toggle{
     display: none;
     background: transparent;

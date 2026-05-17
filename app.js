@@ -80,21 +80,21 @@ form.addEventListener("submit", async (e) => {
 
         if(response.ok){
 
-            formMessage.textContent = "Message sent successfully!";
+            formMessage.textContent = "Mensaje enviado";
             formMessage.classList.add("success");
 
             form.reset();
 
         } else {
 
-            formMessage.textContent = "Something went wrong.";
+            formMessage.textContent = "Algo salió mal.";
             formMessage.classList.add("error");
 
         }
 
     } catch(error){
 
-        formMessage.textContent = "Network error.";
+        formMessage.textContent = "Error en la conexión.";
         formMessage.classList.add("error");
 
     }
