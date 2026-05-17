@@ -87,27 +87,3 @@ body {
     border: 2px solid var(--primary-hover);
 }
 
-.botonFormulario{
-    appearance: none;
-    font-family: inherit;   
-    font-size: inherit;
-    cursor: pointer;
-    margin: 2px;
-    padding: 5px;
-    text-decoration: none;
-    color: var(--primary);
-    font-weight: 600;
-    font-size: 600;
-    padding: 3px 20px;
-    border-radius: 20px;
-    text-shadow: 1px 0px 0.01px var(--bright);
-    border: 2px solid var(--primary);
-    transition: all 0.7s ease;
-    white-space: nowrap;
-    background-color: transparent;
-}
-.botonFormulario:hover{
-    color: var(--analogous);
-    background: var(--primary-hover);
-    border: 2px solid var(--primary-hover);
-}

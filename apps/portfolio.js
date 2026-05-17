@@ -22,8 +22,8 @@ const projects = [
         image: "images/endesarrollo/desarrollo.jpg",
         descripcion:"Proyecto en desarrollo para consumir y mostrar datos desde una API REST.",
         techs: ["Fetch API", "JavaScript", "CSS3", "HTML5"],
-        repo: "https://github.com/jvacevedov/proyectoPokemon",
-        deploy: "https://proyecto-pokemon-flax.vercel.app"
+        repo: "https://github.com/jvacevedov/PokemonAPIExplorer",
+        deploy: "https://pokemon-api-explorer.vercel.app/"
     },
 
     {
