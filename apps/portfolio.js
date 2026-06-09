@@ -1,4 +1,12 @@
 const projects = [
+        {
+        name: "Origenes Ecommerce (Proyecto Full Stack)",
+        image: "images/origenes/origenes.jpg",
+        descripcion:'Ecommerce proyecto colaborativo Origenes Colombia, tienda de arte <a class="botones" href="https://origenesdeployback.onrender.com/swagger-ui/index.html" target="_blank">Backend</a> .',
+        techs: ["Bootstrap", "JavaScript", "HTML5", "CSS3","Java", "SpringBoot","Postgresql"],
+        repo: "https://github.com/vanessgamb-del/ProyectoFinalOrigenesColombia",
+        deploy: "https://vanessgamb-del.github.io/ProyectoFinalOrigenesColombia"
+    },
     {
         name: "Contador interactivo de click",
         image: "images/contador/contador.png",
@@ -49,9 +57,9 @@ projects.forEach(project => {
         <span class="projectTechsMovil">${project.techs.join(', ')}</span>
         </div>
         <div class="projectLinksMovil">
-            <a href=""${project.repo}"" class="botones btn-repoMovil" target="_blank">
+            <a href="${project.repo}" class="botones btn-repoMovil" target="_blank">
             <i class="fa-brands fa-github"></i> Repositorio</a>
-            <a href=""${project.deploy}" class="botones btn-deployMovil" target="_blank">
+            <a href="${project.deploy}" class="botones btn-deployMovil" target="_blank">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
         </div>
     </div>
